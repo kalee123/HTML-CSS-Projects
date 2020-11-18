@@ -69,7 +69,7 @@ nav ul li a{
   background-position: fixed;background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  transition: background-image 3s;
+  transition: background-image 2s;
   min-height: 100vh;
   display: flex;
   justify-content: center;
