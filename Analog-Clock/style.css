@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #ecb4be;
+}
+.clock-circle{
+  border: 12px solid black;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 2px 3px 10px black;
+  background-color: #ffd9e0;
+}
+.center{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: #a964a9;
+  box-shadow: 1px 2px 3px #672b2b;
+}
+.hour-hand{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  top: 74px;
+  margin-left: -3px;
+  margin-top: 3px;
+  z-index: 2;
+  width: 10px;
+  height: 90px;
+  background-color: #2b2d35;
+  border-radius: 100% 100% 0 0;
+  transform-origin: bottom;
+}
+.minute-hand{
+  position: absolute;
+  left: 51%;
+  bottom:50%;
+  top: 52px;
+  margin-left: -3px;
+  z-index: 3;
+  width: 5px;
+  height: 115px;
+  background-color: #7f4a37;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom;
+}
+.second-hand{
+  position: absolute;
+  left: 51%;
+  bottom:50%;
+  top: 31px;
+  margin-left: -3px;
+  z-index: 5;
+  width: 3px;
+  height: 135px;
+  background-color: #9e8d6e;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom;
+}
+.dial-list{
+  width: 2px;
+  height: 13px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform-origin: 50% 165px;
+}
+.number{
+  font-size: 25px;
+  position: absolute;
+}
+.one{
+  left: 51%;
+  top: 40px;
+  transform: translate(55px);
+}
+.two{
+  left: 83%;
+  top: 85px;
+}
+.three{
+  top: 47%;
+  left: 89%;
+}
+.four{
+  left: 83%;
+  bottom: 83px
+}
+.five{
+  left: 51%;
+  bottom: 34px;
+  transform: translate(55px);
+}
+.six{
+  left: 49%;
+  bottom: 20px;
+}
+.seven{
+  left: 29%;
+  bottom: 35px;
+}
+.eight{
+  left: 14%;
+  bottom: 80px
+}
+.nine{
+  top: 47%;
+  left: 8%;
+}
+.ten{
+  left: 13%;
+  top: 85px;
+}
+.eleven{
+  left: 27%;
+  top: 40px;
+}
+.twelve{
+  left: 47%;
+  top: 25px;  
+}
+.date{
+  position: absolute;
+  font-family: cursive;
+  font-size: 25px;
+  padding-top: 90px;
+  font-weight: 600;
+}
+
