@@ -1,4 +1,4 @@
 # Analog-Clock
 ### Build with vanilla js and css
 
-https://kalee123.github.io/Analog-Clock
+[Live demo](https://kalee123.github.io/HTML-CSS-Projects/Analog-Clock)
