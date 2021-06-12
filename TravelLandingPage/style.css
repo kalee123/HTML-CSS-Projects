@@ -1,0 +1,378 @@
+/* https://www.pexels.com/search/travel/ 
+https://wallpapershome.com/travel/?page=1
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.btn{
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgb(0,0,0,0.5);
+  transition: all 0.3s;
+}
+.hr-line{
+  width: 120px;
+  background-color: #b7b7d4;
+  height: 4px;
+  margin: auto;
+}
+/* Nav bar */
+nav{
+  width: 100%;
+  background-color: #060606;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  scroll-behavior: smooth;
+}
+nav span{
+  display: none;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  padding: 0 15px;
+  color: white;
+}
+nav ul li a:hover{
+    color: gray;
+    transition: ease .2s;
+}
+nav ul li a{
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* Home banner */
+.home{
+  background-color: #af7781;
+  background-image: url('images/main_img.jpg');
+  background-size: cover;
+  background-position: fixed;background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: background-image 2s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home h1{
+  color: white;
+}
+.home-container{
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section-title{
+  font-size: 35px;
+  padding: 5px;
+  padding-bottom: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+}
+.home-container p{
+  font-size: 25px;
+  color: #d6c7ca;
+  padding-bottom: 25px;
+}
+.explore-btn{
+  background-color: #888081;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+}
+.explore-btn:hover{
+  background-color: #c5a2a7;
+}
+/* service container */
+.service-container{
+  margin-bottom: 60px;
+  text-align: center;
+}
+.service-container h1{
+  padding-top: 80px;
+}
+.services{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.service-layout{
+  width: 30%;
+}
+.article-img i{
+  font-size: 100px;
+  color: #7b6164;
+}
+.article-title{
+  font-size: 24px;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: gray;
+}
+.service-layout p{
+  padding: 5px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.guide-container{
+  padding: 10px;
+  background-color: #f3e2e6; 
+  text-align: center;
+}
+.guide-container>h1{
+  margin-top: 55px;
+}
+.row-data{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  /*background-color: red;*/
+}
+.row-reverse{
+  flex-direction: row-reverse;
+}
+.img-container{
+  width: 50%;
+  height: 100%;
+  margin: 10px auto;
+  position: relative;
+  z-index: 0;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.img-container p{
+  width: 120px;
+  background-color: green;
+  padding: 5px;
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  right: 0;
+  bottom: 0;
+}
+.place-detail{
+  width: 50%;
+  margin: 10px;
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.place-detail h2{
+  font-size: 35px;
+}
+.place-detail p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.btn-more{
+  margin: 15px 0;
+}
+
+.about-us{
+  min-height: 100vh;
+  padding-top: 60px;
+  text-align: center;
+}
+.about-us>h1{
+  text-align: center;
+}
+.row-about{
+  display: flex;
+  padding: 25px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.about-img{
+  width: 50%;
+  margin: 10px;
+  position: relative;
+}
+.about-img img{
+  vertical-align: top;
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-img::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  /*border: 4px solid #a0a0ad;*/
+  position: absolute;
+  box-sizing: border-box;
+  top: -10px;
+  right: 10px;
+  z-index: -1;
+}
+.about-data{
+  width: 50%;
+  padding-left: 20px;
+  text-align: left;
+}
+.about-data h2,.about-data p{
+  letter-spacing: 1px;
+}
+.about-data h2{
+  text-transform: uppercase;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-bottom: 20px;
+}
+.about-data p{
+  font-size: 19px;
+  text-align: justify;
+}
+
+
+.contact-us{
+  height: 100vh; 
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contact-form{
+  min-height: calc(90vh - 150px);
+  padding: 30px 0 5px 0;
+  margin: 5px auto;
+  width: 300px;
+  border-radius: 5px;
+  /*background-color: pink;*/
+}
+.text-field{
+  text-align: left;
+  padding: 10px;
+}
+.text-field:nth-child(5){
+  text-align: center;
+  padding: 5px;
+}
+.text-field label{
+  font-size: 18px;
+}
+.text-field input{
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding: 0 5px;
+}
+.text-field div{
+  text-align: center;
+  margin: 0 auto;
+}
+.footer{
+  height: 10vh;
+}
+.footer span{
+  padding: 10px 20px;
+  margin-top: 1vh;
+  display: inline-block;
+  font-size: 28px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 320px){
+  .contact-form{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px){
+  nav{
+    flex-direction: column;
+    transition: all .2s;
+  }
+  nav>img{
+    align-self: flex-start;
+  }
+  nav span{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  nav ul {
+    transition: all .2s;
+    display: none;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+    padding-bottom: 14px;
+  }
+  .row-data{
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 570px){
+  .services{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .service-layout{
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .row-data, row-reverse{
+    width: 90vw;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .img-container, .place-detail{
+    width: 100%;
+  }
+  .place-detail{
+    padding-left: 0;
+  }
+  .place-detail p{
+    text-align: justify;
+  }
+  
+  .row-about{
+    flex-direction: column;
+  }
+  .about-data,.about-img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .about-img::before{
+    border: none;
+  }
+  .about-data h2{
+    padding: 10px 0;
+  }
+  .about-data p{
+    text-align: justify;
+  }
+  
+}
