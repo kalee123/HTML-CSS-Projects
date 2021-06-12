@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="form-container">
+	  <header id="header">
+	    <h1 id="title">freeCodeCamp Survey Form</h1>
+	    <p id="description">Thank you for taking the time to help us improve the platform</p>
+	  </header>
+	  <form id="survey-form" class="survey-form">
+	    <div class="row"> 
+	        <label for="name" class="label" id="name-label"> *Name:</label>
+	        <input type="text" id="name" placeholder="Enter your name" required class="input-field">
+	    </div>
+	    <div class="row">
+	        <label for="email" class="label" id="email-label"> *Email: </label>  
+	        <input type="email" class="input-field" id="email" placeholder="Enter your email"  required>
+	    </div>
+	    <div class="row">
+	        <label for="age" class="label" id="number-label"> *Age: </label>
+	        <input type="number" class="input-field" id="number"  min="1" max="100" placeholder="Enter your age" required>
+	    </div>
+	    <div class="row">
+	        <label for="role" class="label"> *Which option best describes your current role?: </label>
+	        <select class="input-field" id="dropdown">
+	          <option>Select</option>
+	          <option>Student</option>
+	          <option>Full time Job</option>
+	          <option>Full time Learner</option>
+	          <option>Others</option>
+	         </select>
+	    </div>
+	    <div class="row">
+	        <label for="role" class="label"> Would you recommend freeCodeCamp to a friend?</label>
+	      <div class="input-group">
+	          <input type="radio" name="group" value="Definitely">
+	          <label>Definitely</label><br>
+	          <input type="radio" name="group" value="Maybe">
+	          <label>May be</label><br>
+	          <input type="radio" name="group" value="NotSure">
+	          <label>Not Sure</label><br>
+	       </div>
+	    </div> 
+	    
+	    <div class="row">
+	        <label for="role" class="label"> What is your favorite feature of freeCodeCamp?: </label>
+	        <select class="input-field" id="dropdown">
+	          <option>Select</option>
+	          <option>Challenges</option>
+	          <option>Projects</option>
+	          <option>Community</option>
+	          <option>Open source</option>
+	         </select>
+	    </div>  
+	    <div class="row">
+	        <label for="role" class="label"> What would you like to see improved? (Check all that apply)</label>
+	      <div class="input-group">
+	        <input type="checkbox" value="attribute">
+	        <label for="frontend">Front end projects</label><br>
+	        <input type="checkbox" value="attribute">
+	        <label for="backend">Backend Projects</label><br>
+	        <input type="checkbox" value="attribute">
+	        <label for="datavisualization">Data Visuvalization</label><br>
+	        <input type="checkbox" value="attribute">
+	        <label for="challenges">Challenges</label><br> 
+	        <input type="checkbox" value="attribute">
+	        <label for="opensource">Open Source community</label><br>
+	        <input type="checkbox" value="attribute">
+	        <label for="githelp">Gitter help rooms</label><br>
+	      </div>
+	    </div> 
+	    <div class="row">
+	         <label for="subject" class="label">Any comments or suggestions?</label>
+	         <textarea class="input-field" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	    </div>
+	    <div class="submit">
+	      <button id="submit">Submit</button>
+	    </div>
+	  </form>
+	</div>
+</body>
+</html>
